@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/* ************** */
+/* Nav Bar */
+/* ************** */
+.navbar {
+	background: #393e46;
+	margin-top: 0.4px;
+	font-size: 1.2rem;
+	color: #fff;
+	padding: 0.4rem 0;
+}
+
+.nav-items {
+	display: flex;
+	text-align: center;
+	justify-content: space-evenly;
+	list-style: none;
+}
+
+.nav-items a:link, .nav-items a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav-item {
+	transition: all 0.2s;
+}
+
+.nav-item:hover {
+	color: #00adb5;
+}
+
+/* ************** */
+/* Image Slider */
+/* ************* */
+.img-slider {
+	height: 30rem;
+	width: 100%;
+	background: rgb(126, 115, 136);
+}
+
+.slider-img {
+	height: 30rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* ******************* */
+/* Product Section */
+/* ******************* */
+.new-arrival-heading {
+	text-align: center;
+	font-size: 2.5rem;
+	margin: 2rem 0;
+}
+
+.new-arrival-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 0 2rem;
+}
+
+.new-arrival-container div h3 {
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+
+.new-arrival-container div p {
+	font-size: 1.2rem;
+	margin: 1rem 0;
+}
+
+.new-arrival-img {
+	height: 20rem;
+	width: 20rem;
+	object-fit: cover;
+}
+
+/* **************** */
+/* Trending Section */
+/* **************** */
+.tredning-heading {
+	text-align: center;
+	font-size: 2.5rem;
+	margin: 2rem 0;
+}
+
+.trending-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 0 2rem;
+}
+
+.trending-container div h3 {
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+
+.trending-container div p {
+	font-size: 1.2rem;
+	margin: 1rem 0;
+}
+
+.trending-img {
+	height: 20rem;
+	width: 20rem;
+	object-fit: cover;
+}
+
+/* **************** */
+/* Sale */
+/* **************** */
+.sale-heading {
+	text-align: center;
+	font-size: 2.5rem;
+	margin: 2rem 0;
+}
+
+.sale-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 0 2rem;
+}
+
+.sale-container div h3 {
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+
+.sale-container div p {
+	font-size: 1.2rem;
+	margin: 1rem 0;
+}
+
+.sale-img {
+	height: 20rem;
+	width: 20rem;
+	object-fit: cover;
+}
+
+/* ******************** */
+/* Shop By Brand */
+/* ******************** */
+.shop-brand-heading {
+	text-align: center;
+	font-size: 2.5rem;
+	margin: 2rem 0;
+}

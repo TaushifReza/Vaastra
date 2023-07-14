@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+body {
+	background: linear-gradient(120deg, #00adb5, #8e44ad);
+}
+
+/* ******************** */
+/* Form header Design */
+/* ******************* */
+.center {
+	width: 60rem;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+	margin: auto;
+	margin-top: 3rem;
+}
+
+.center h1 {
+	text-align: center;
+	padding: 20px 0;
+	border-bottom: 1px solid silver;
+}
+
+.center form {
+	padding: 0 40px;
+	margin-top: 1rem;
+	padding-bottom: 1rem;
+	margin-bottom: 5rem;
+}
+
+/* **************************** */
+/* Form Body design */
+/* ************************** */
+.form-detail-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 2rem;
+}
+
+.form-detail-container label {
+	font-size: 1.5rem;
+	color: #555;
+	font-weight: 500;
+}
+
+.form-detail-container input[type="text"], .form-detail-container input[type="email"],
+	.form-detail-container input[type="number"], .form-detail-container input[type="password"],
+	.form-detail-container input[type="date"], .form-detail-container input[type="file"],
+	.form-detail-container select {
+	display: block;
+	width: 100%;
+	padding: 5px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	font-size: 1.4rem;
+	margin-top: 1rem;
+	margin-bottom: 10px;
+	transition: border-color 0.3s ease-in-out;
+	color: #555;
+	/* border: none; */
+	outline: none;
+}
+
+.form-detail-container input[type="file"] {
+	font-size: 1.2rem;
+	/* border: none; */
+}
+
+.form-detail-container input[type="date"] {
+	font-size: 1.4rem;
+	/* border: none; */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus,
+	input[type="password"]:focus, input[type="date"]:focus, select:focus {
+	border-color: #00adb5;
+	outline: none;
+}
+
+.terms {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 0.5rem;
+}
+
+.terms label {
+	font-size: 1.2rem;
+	color: #555;
+	font-weight: 500;
+}
+/* **************************** */
+/* Form btn and footer design */
+/* ************************** */
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+input[type="submit"] {
+	width: 50%;
+	height: 5rem;
+	border: 1px solid;
+	background: #00adb5;
+	background-image: linear-gradient(to right, #00adb5 0%, #8e44ad 51%, #00adb5 100%);
+	border-radius: 25px;
+	font-size: 18px;
+	color: #e9f4fb;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s;
+	background-size: 200% auto;
+}
+
+input[type="submit"]:hover {
+	background-position: right center;
+	/* change the direction of the change here */
+	border-color: #00adb5;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+.signup_link {
+	margin: 1rem 0;
+	text-align: center;
+	font-size: 1.4rem;
+	color: #666666;
+}
+
+.signup_link a {
+	color: #00adb5;
+	text-decoration: none;
+}
+
+.signup_link a:hover {
+	text-decoration: underline;
+}
+/* **************************** */
+/* Loading  */
+/* ************************** */
+.loader-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.loader-container>p {
+	font-size: 2.2rem;
+	font-weight: 500;
+}
+
+.lds-roller {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+
+.lds-roller div {
+	animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #000;
+	margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+	animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+	top: 63px;
+	left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+	animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+	top: 68px;
+	left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+	animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+	top: 71px;
+	left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+	animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+	top: 72px;
+	left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+	animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+	top: 71px;
+	left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+	animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+	top: 68px;
+	left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+	animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+	top: 63px;
+	left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+	animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+	top: 56px;
+	left: 12px;
+}
+
+@keyframes lds-roller { 0% {
+	transform: rotate(0deg);
+}
+100%{transform:rotate(360deg);}
+}
+/* **************************** */
+/* Password view and hide */
+/* ************************** */
+.password-wrapper {
+	position: relative;
+}
+
+#show-password {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	border: none;
+	background: none;
+	font-size: 14px;
+	color: #008cba;
+	cursor: pointer;
+	outline: none;
+}
+
+#show-password i {
+	font-size: 16px;
+}

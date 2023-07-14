@@ -1,0 +1,410 @@
+@charset "ISO-8859-1";
+
+
+.main-div {
+	width: 100%;
+	background-color: #e6e6e6;
+	display: grid;
+	grid-template-columns: 30% 70%;
+	gap: 2rem;
+	padding: 2rem 0;
+}
+
+.admin-functions {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	/* border: 2px solid black; */
+	border-right: 1px solid rgb(96, 94, 94);
+}
+
+.admin-functions h1 {
+	font-size: 2.4rem;
+	font-weight: 600;
+	color: #555;
+	text-align: center;
+}
+
+/* ------------------------ */
+/* Edit btn design */
+/* ------------------------ */
+.edit-btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.edit-profile-btn {
+	width: 90%;
+	height: 5rem;
+	border: 1px solid;
+	background-image: linear-gradient(to right, #00adb5 0%, #8e44ad 51%, #00adb5 100%);
+	border-radius: 1.1rem;
+	font-size: 18px;
+	color: #e9f4fb;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s;
+	background-size: 200% auto;
+	text-transform: none;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.edit-profile-btn:hover {
+	background-position: right center;
+	/* change the direction of the change here */
+	border-color: #00adb5;
+	transition: 0.5s;
+}
+
+/* ---------------------------- */
+/* LogOut Overlay */
+/* ---------------------------- */
+.overlay {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.overlay-content {
+	background-color: white;
+	width: 300px;
+	height: 150px;
+	margin: auto;
+	margin-top: 200px;
+	padding: 20px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.overlay-content>p {
+	font-size: 1.6rem;
+}
+
+.button-container {
+	margin-top: 20px;
+}
+
+button {
+	margin: 5px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	text-transform: uppercase;
+	border: 2px solid white;
+}
+
+#yes-button {
+	background-color: red;
+}
+
+#no-button {
+	background-color: green;
+}
+
+/* ---------------------------- */
+/* Add Products */
+/* ---------------------------- */
+.formc {
+	margin-top: 3rem;
+	width: 80%;
+	padding: 1rem 1rem;
+	background-color: #f5f5f7;
+	border-radius: 8px;
+	box-shadow: 0 10px 15px -3px rgb(0 0 0/ 0.1), 0 4px 6px -4px
+		rgb(0 0 0/ 0.1);
+}
+
+.editForm-item {
+	display: flex;
+	flex-direction: column;
+}
+/* ----------------------------- */
+/* Lable and input fiels style */
+/* ---------------------------- */
+.input-conatiner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.editForm-item>label {
+	font-size: 1.4rem;
+	color: #393e46;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.editForm-item>input, .editForm-item>select {
+	width: 30rem;
+	padding: 10px;
+	border: 1px solid #d1d1d1;
+	border-radius: 4px;
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #555555;
+	margin-bottom: 20px;
+}
+
+.editForm-item>input:focus, .editForm-item>select:focus {
+	border-color: #00adb5;
+	outline: 0;
+	-webkit-box-shadow: 0 0 0 1px #00adb5;
+	box-shadow: 0 0 0 1px #00adb5;
+}
+
+.editForm-item>input:disabled, .editForm-item>select:disabled {
+	background-color: #eeeeee;
+	cursor: default;
+}
+
+.editForm-item>textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #d1d1d1;
+	border-radius: 4px;
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #555555;
+	margin-bottom: 20px;
+}
+
+.editForm-item>textarea:focus {
+	border-color: #00adb5;
+	outline: 0;
+	-webkit-box-shadow: 0 0 0 1px #00adb5;
+	box-shadow: 0 0 0 1px #00adb5;
+}
+
+.editForm-item>textarea:disabled {
+	background-color: #eeeeee;
+	cursor: default;
+}
+/* ----------------------------- */
+/* description text area */
+/* ---------------------------- */
+.description-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#editForm-item {
+	width: 88.8%;
+	margin: auto;
+}
+
+.description-container>textarea {
+	width: 100%;
+	height: 10rem;
+	padding: 10px;
+	border: 1px solid #d1d1d1;
+	border-radius: 4px;
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #555555;
+	margin-bottom: 20px;
+}
+
+.description-container>textarea:focus {
+	border-color: #00adb5;
+	outline: 0;
+	-webkit-box-shadow: 0 0 0 1px #00adb5;
+	box-shadow: 0 0 0 1px #00adb5;
+}
+
+.description-container>textarea:disabled {
+	background-color: #eeeeee;
+	cursor: default;
+}
+/* --------------------- */
+/* Submit btn */
+/* --------------------- */
+.btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.btn-container>a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.btn {
+	width: 20rem;
+	height: 50px;
+	border: none;
+	background: #00adb5;
+	background-image: linear-gradient(to right, #00adb5 0%, #8e44ad 51%, #00adb5 100%);
+	border-radius: 11px;
+	font-size: 18px;
+	color: #e9f4fb;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	margin-left: 2rem;
+	margin-bottom: 2.4rem;
+	transition: 0.5s;
+	background-size: 200% auto;
+}
+
+.btn:hover {
+	background-position: right center;
+	/* change the direction of the change here */
+	border-color: #00adb5;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+/* ----------------------------- */
+/* Product List */
+/* ---------------------------- */
+.product-contaoner {
+	width: 97%;
+    margin-top: 20px;
+    background-color: #00adb5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.product-heading {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	padding: 2rem;
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: #222831;
+}
+.productList{
+	overflow: hidden;
+}
+
+.plist {
+	margin-top: 20px;
+	height: 100%;
+	overflow: hidden;
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.numbersp {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	padding: 1rem;
+	overflow: hidden;
+	
+}
+
+.numbersp:nth-child(odd) {
+	background-color: #f0f0f0;
+}
+
+.numbersp>h1 {
+	font-size: 1.4rem;
+	/* margin: 5px; */
+	font-weight: 500;
+}
+
+.btn-a {
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+}
+
+.edit {
+	color: green;
+}
+
+.del {
+	color: red;
+}
+
+#panel-main-div {
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+
+#panel-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	/* justify-content: flex-end; */
+	gap: 1rem;
+	margin-top: 1rem; padding : 1rem;
+	border-right: 1px solid rgb(96, 94, 94);
+	padding: 1rem;
+}
+
+#admin-functions>h1 {
+	display: block; padding-bottom : 1rem;
+	/* border: 2px solid black; */
+	font-size: 2.4rem;
+	font-weight: 600;
+	color: #555;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+#edit-profile-btn {
+	width: 30rem;
+	height: 5rem;
+	border: 1px solid;
+	background-image: linear-gradient(to right, #00adb5 0%, #8e44ad 51%, #00adb5 100%);
+	border-radius: 1.1rem;
+	font-size: 18px;
+	color: #e9f4fb;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s;
+	background-size: 200% auto;
+	text-transform: none;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+#edit-profile-btn:hover {
+	background-position: right center;
+	/* change the direction of the change here */
+	border-color: #00adb5;
+	transition: 0.5s;
+}
+
+#edit-btn-container {
+	
+}
+
+#edit-profile-btn {
+	
+}
+
+#edit-btn-container {
+	
+}
+
+#edit-profile-btn {
+	
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Vaastra</display-name>
+	<welcome-file-list>
+		<welcome-file>pages/index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+	<!-- <error-page> <error-code>404</error-code> <location>/error404.jsp</location> 
+		</error-page> -->
+
+<!-- 	<servlet>
+		<servlet-name>servletOne</servlet-name>
+		<servlet-class>com.vaastra.servlet.product.ProductHomeServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet> -->
+
+	<filter>
+		<filter-name>customerAuthenticationFilter</filter-name>
+		<filter-class>com.vaastra.filter.CustomerAuthentication</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>customerAuthenticationFilter</filter-name>
+		<url-pattern>/pages/profile.jsp</url-pattern>
+		<url-pattern>/profile.jsp</url-pattern>
+	</filter-mapping>
+
+</web-app>

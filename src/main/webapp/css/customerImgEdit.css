@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+body {
+	background: linear-gradient(120deg, #00adb5, #8e44ad);
+}
+
+.container  {
+	margin: 3.2rem auto 6.4rem auto;
+	width: 40%;
+	padding: 1rem 1rem;
+	background-color: #f5f5f7;
+	border-radius: 8px;
+	box-shadow: 0 10px 15px -3px rgb(0 0 0/ 0.1), 0 4px 6px -4px
+		rgb(0 0 0/ 0.1);
+}
+
+.edit-profile-section>h1 {
+	font-size: 2.4rem;
+	color: #5a5e64;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding: 1rem;
+	text-align: center;
+	border-bottom: 1px solid #bcbcbc;
+}
+
+.editForm-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.profileImage-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.profileImage-container>p {
+	font-size: 1.4rem;
+	color: #5a616c;
+	font-weight: 500;
+	margin-bottom: 20px;
+	padding: 1rem;
+	text-align: center;
+}
+
+.profileImg {
+	width: 200px;
+	height: 20rem;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	border: 2px solid #ffffff;
+	box-shadow: 0 10px 15px -3px rgb(0 0 0/ 0.1), 0 4px 6px -4px
+		rgb(0 0 0/ 0.1);
+}
+/* ---------------------- */
+/* file input field style */
+/* ---------------------- */
+.file-input {
+	display: inline-block;
+	width: 10rem;
+	background-color: #ffffff;
+	border: 1px solid #d1d1d1;
+	padding: 6px 1.2rem;
+	border-radius: 4px;
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #555555;
+	cursor: pointer;
+	position: relative;
+}
+
+.file-input:hover {
+	border-color: #bcbcbc;
+}
+
+.file-input:focus {
+	border-color: #00adb5;
+	outline: 0;
+	-webkit-box-shadow: 0 0 0 1px #00adb5;
+	box-shadow: 0 0 0 1px #00adb5;
+}
+
+.file-input:disabled {
+	background-color: #eeeeee;
+	cursor: default;
+}
+
+.file-input::-webkit-file-upload-button {
+	visibility: hidden;
+}
+
+.file-input::before {
+	content: "Browse";
+	display: inline-block;
+	background-color: #ffffff;
+	border: none;
+	padding: 6px 1.2rem;
+	border-radius: 4px;
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #555555;
+	cursor: pointer;
+	position: relative;
+	white-space: nowrap;
+}
+/* **************************** */
+/* Form btn and footer design */
+/* ************************** */
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+input[type="submit"] {
+	width: 50%;
+	height: 5rem;
+	border: 1px solid;
+	background: #00adb5;
+	background-image: linear-gradient(to right, #00adb5 0%, #8e44ad 51%, #00adb5 100%);
+	border-radius: 25px;
+	font-size: 18px;
+	color: #e9f4fb;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s;
+	background-size: 200% auto;
+}
+
+input[type="submit"]:hover {
+	background-position: right center;
+	/* change the direction of the change here */
+	border-color: #00adb5;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+.signup_link {
+	margin: 1rem 0;
+	text-align: center;
+	font-size: 1.4rem;
+	color: #666666;
+}
+
+.signup_link a {
+	color: #00adb5;
+	text-decoration: none;
+}
+
+.signup_link a:hover {
+	text-decoration: underline;
+}
+
+.btn>a {
+	text-decoration: none;
+	color: #555;
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.btn>a:hover {
+	text-decoration: underline;
+}
